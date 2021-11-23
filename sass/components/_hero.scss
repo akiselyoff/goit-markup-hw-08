@@ -1,26 +1,69 @@
 .hero {
-  margin: 0 auto;
-  height: 600px;
-  max-width: 1600px;
-  padding: 200px 0;
+  height: 400px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 118px 0;
   text-align: center;
   color: var(--btn-text-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #c4c4c4;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    max-width: 768px;
+    padding: 118px 0;
+    color: var(--btn-text-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/hero/hero-tablet2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
+    color: var(--btn-text-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/hero/hero-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../img/hero/hero-tablet2x.jpg);
+  }
 }
+.hero__container {
+  padding-left: 60px;
+  padding-right: 60px;
 
+  @media screen and (min-width: 768px) {
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+}
 .hero__title {
-  width: 696px;
   margin: 0 auto 30px;
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__btn {
   @extend %button;
