@@ -227,140 +227,212 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="images/index/igor.jpg" alt="Игорь Демьяненко" width="270" />
+              <!-- <img src="./img/team/team-1.jpg" alt="Игорь Демьяненко" width="270" /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/team/team-1-desktop.jpg 270w, ./img/team/team-1-desktop@2x.jpg 540w"
+                  sizes="25vw"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/team/team-1-tablet.jpg 354w, ./img/team/team-1-tablet@2x.jpg 708w"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/team/team-1.jpg 450w, ./img/team/team-1@2x.jpg 900w"
+                  sizes="100vw"
+                />
+                <img src="#" alt="Игорь Демьяненко" loading="lazy" />
+              </picture>
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p class="team-list__position" lang="en">Product Designer</p>
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon instagram">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+              <ul class="social-list team-social-list">
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon instagram">
+                      <use href="./img/svg/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon twitter">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon twitter">
+                      <use href="./img/svg/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon facebook">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon facebook">
+                      <use href="./img/svg/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon linkedin">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon linkedin">
+                      <use href="./img/svg/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="team-list__item">
-              <img src="images/index/olga.jpg" alt="Ольга Репина" width="270" />
+              <!-- <img src="images/index/olga.jpg" alt="Ольга Репина" width="270" /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/team/team-2-desktop.jpg 270w, ./img/team/team-2-desktop@2x.jpg 540w"
+                  sizes="25vw"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/team/team-2-tablet.jpg 354w, ./img/team/team-2-tablet@2x.jpg 708w"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/team/team-2.jpg 450w, ./img/team/team-2@2x.jpg 900w"
+                  sizes="100vw"
+                />
+                <img src="#" alt="Ольга Репина" loading="lazy" />
+              </picture>
               <h3 class="team-list__title">Ольга Репина</h3>
               <p class="team-list__position" lang="en">Frontend Developer</p>
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon instagram">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+              <ul class="social-list team-social-list">
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon instagram">
+                      <use href="./img/svg/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon twitter">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon twitter">
+                      <use href="./img/svg/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon facebook">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon facebook">
+                      <use href="./img/svg/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon linkedin">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon linkedin">
+                      <use href="./img/svg/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="team-list__item">
-              <img src="images/index/nikolay.jpg" alt="Николай Тарасов" width="270" />
+              <!-- <img src="images/index/nikolay.jpg" alt="Николай Тарасов" width="270" /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/team/team-3-desktop.jpg 270w, ./img/team/team-3-desktop@2x.jpg 540w"
+                  sizes="25vw"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/team/team-3-tablet.jpg 354w, ./img/team/team-3-tablet@2x.jpg 708w"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/team/team-3.jpg 450w, ./img/team/team-3@2x.jpg 900w"
+                  sizes="100vw"
+                />
+                <img src="#" alt="Николай Тарасов" loading="lazy" />
+              </picture>
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p class="team-list__position" lang="en">Marketing</p>
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon instagram">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+              <ul class="social-list team-social-list">
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon instagram">
+                      <use href="./img/svg/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon twitter">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon twitter">
+                      <use href="./img/svg/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon facebook">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon facebook">
+                      <use href="./img/svg/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon linkedin">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon linkedin">
+                      <use href="./img/svg/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="team-list__item">
-              <img src="images/index/michael.jpg" alt="Михаил Ермаков" width="270" />
+              <!-- <img src="images/index/michael.jpg" alt="Михаил Ермаков" width="270" /> -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/team/team-4-desktop.jpg 270w, ./img/team/team-4-desktop@2x.jpg 540w"
+                  sizes="25vw"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/team/team-4-tablet.jpg 354w, ./img/team/team-4-tablet@2x.jpg 708w"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/team/team-4.jpg 450w, ./img/team/team-4@2x.jpg 900w"
+                  sizes="100vw"
+                />
+                <img src="#" alt="Михаил Ермаков" loading="lazy" />
+              </picture>
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p class="team-list__position" lang="en">UI Designer</p>
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon instagram">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+              <ul class="social-list team-social-list">
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon instagram">
+                      <use href="./img/svg/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon twitter">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon twitter">
+                      <use href="./img/svg/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon facebook">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon facebook">
+                      <use href="./img/svg/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="">
-                    <svg class="social-list__icon linkedin">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                <li class="social-list__item team-social-list__item">
+                  <a class="social-list__link team-social-list__link" href="">
+                    <svg class="social-list__icon team-social-list__icon linkedin">
+                      <use href="./img/svg/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
