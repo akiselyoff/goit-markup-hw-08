@@ -1,36 +1,82 @@
-@media screen and (max-width: 767px) {
-  .features-list__item {
+.features-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+.features-list__item {
+  @media screen and (max-width: 767px) {
+    display: block;
     width: 100%;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    // width: 270px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  .features-list__item {
-    width: 354px;
-    // width: calc((100%-4 * 15px) / 2);
-    margin: 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .features-list__item {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .features-list__item {
+//     display: block;
+//     width: 100%;
+//     &:not(:last-child) {
+//       margin-bottom: 30px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .features-list {
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     margin-left: -30px;
+//     margin-bottom: -30px;
+//   }
+//   .features-list__item {
+//     // width: 354px;
+//     // width: calc((100%-60px) / 2);
+//     // margin: 15px;
+//     flex-basis: calc(100% / 2 - 30px);
+//     margin-left: 30px;
+//     margin-bottom: 30px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .features-list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   .features-list__item {
+//     width: 270px;
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
 
 .features-list__thumb {
   @extend %flex-center;
