@@ -34,7 +34,7 @@
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com" class="contacts-list__link mail">
               <svg class="contacts-list__icon icon-envelope" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+                <use href="./img/svg/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -42,53 +42,57 @@
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="contacts-list__link tel">
               <svg class="contacts-list__icon icon-smartphone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
+                <use href="./img/svg/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-button burger-btn">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <!-- MOBILE-MENU START -->
+        <button type="button" class="menu-button burger-btn" data-menu-open aria-controls="mobile-menu">
+          <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="burger-btn__icon" href="./img/svg/icons.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <div class="mobile-menu">
-          <button type="button" class="menu-button close-btn">
-            <svg width="40" height="40">
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          <button type="button" class="menu-button close-btn" data-menu-close>
+            <svg class="menu-button__icon" width="40" height="40">
               <use class="close-btn__icon" href="./img/svg/icons.svg#icon-close-burger"></use>
             </svg>
           </button>
-          <ul class="nav-list mobile-menu__nav-list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link nav-list__link--active">Студия</a>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--active">Студия</a>
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
             </li>
-            <li class="nav-list__item">
-              <a href="" class="nav-list__link">Контакты</a>
+            <li class="mobile-nav__item">
+              <a href="" class="mobile-nav__link">Контакты</a>
             </li>
           </ul>
-          <div>
-            <a href="tel:+380961111111" class="tel">+380961111111</a>
-            <a href="mailto:info@devstudio.com" class="">info@devstudio.com</a>
+          <div class="mobile-menu__group">
+            <div class="mobile-contacts">
+              <a href="tel:+380961111111" class="mobile-contacts__tel">+380961111111</a>
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+            </div>
+            <ul class="mobile-social-list">
+              <li class="mobile-social-list__item">
+                <a class="mobile-social-list__link" href="">instagram</a>
+              </li>
+              <li class="mobile-social-list__item">
+                <a class="mobile-social-list__link" href="">twitter</a>
+              </li>
+              <li class="mobile-social-list__item">
+                <a class="mobile-social-list__link" href="">facebook</a>
+              </li>
+              <li class="mobile-social-list__item">
+                <a class="mobile-social-list__link" href="">linkedin</a>
+              </li>
+            </ul>
           </div>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a class="social-list__link" href=""> instagram </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href=""> twitter </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href=""> facebook </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href=""> linkedin </a>
-            </li>
-          </ul>
         </div>
+        <!-- MOBILE-MENU END -->
       </div>
     </header>
     <main class="index">
@@ -96,11 +100,12 @@
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
-          <!-- <div class="backdrop is-hidden" data-modal>
+          <!-- MODAL START -->
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal__button-close btn" data-modal-close>
                 <svg class="modal__icon-close">
-                  <use href="./images/icons.svg#icon-close"></use>
+                  <use href="./img/svg/icons.svg#icon-close"></use>
                 </svg>
               </button>
               <form class="modal-form">
@@ -110,7 +115,7 @@
                     <label class="modal-form__label" for="person">Имя</label>
                     <input type="text" name="person" class="modal-form__input" id="person" placeholder=" " autofocus />
                     <svg class="icon modal-form__icon">
-                      <use href="./images/icons.svg#icon-form-person"></use>
+                      <use href="./img/svg/icons.svg#icon-form-person"></use>
                     </svg>
                   </div>
 
@@ -118,14 +123,14 @@
                     <label class="modal-form__label" for="tel">Телефон</label>
                     <input type="tel" name="tel" class="modal-form__input" id="tel" />
                     <svg class="icon modal-form__icon">
-                      <use href="./images/icons.svg#icon-form-phone"></use>
+                      <use href="./img/svg/icons.svg#icon-form-phone"></use>
                     </svg>
                   </div>
                   <div class="modal-form__item">
                     <label class="modal-form__label" for="mail">Почта</label>
                     <input type="email" name="mail" class="modal-form__input" id="mail" placeholder=" " />
                     <svg class="icon modal-form__icon">
-                      <use href="./images/icons.svg#icon-form-mail"></use>
+                      <use href="./img/svg/icons.svg#icon-form-mail"></use>
                     </svg>
                   </div>
                   <div class="modal-form__item">
@@ -139,6 +144,7 @@
                     ></textarea>
                   </div>
                 </div>
+
                 <label class="modal-form__agreement">
                   <input type="checkbox" name="agreement" class="modal-form__agreement-input" />
                   <span class="modal-form__icon-check"></span>
@@ -149,7 +155,8 @@
                 <button type="submit" class="btn modal-form__btn">Отправить</button>
               </form>
             </div>
-          </div> -->
+          </div>
+          <!-- MODAL END -->
         </div>
       </section>
       <section class="section features">
@@ -567,6 +574,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 </html>
