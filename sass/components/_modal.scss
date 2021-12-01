@@ -134,6 +134,9 @@
 }
 
 .modal-form__agreement {
+  @media screen and (max-width: 479px) {
+    display: inline-block;
+  }
   @extend %flex-center;
   flex-wrap: wrap;
   justify-content: center;
@@ -154,6 +157,9 @@
   position: absolute;
 }
 .modal-form__icon-check {
+  @media screen and (max-width: 479px) {
+    display: inline-block;
+  }
   margin-right: 7px;
   display: block;
   width: 16px;

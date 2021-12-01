@@ -12,10 +12,16 @@
       flex-wrap: wrap;
       align-items: baseline;
     }
+    @media screen and (min-width: 1200px) {
+      justify-content: initial;
+    }
   }
 }
 .footer__item {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -38,12 +44,15 @@
 // }
 
 .address-container {
-  //   text-align: center;
-  //   margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
-// .subscribe-container {
-//   margin-left: auto;
-// }
+.subscribe-container {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
 .footer__logo {
   margin-bottom: 20px;
   padding: 0;
